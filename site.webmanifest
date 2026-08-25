@@ -1,0 +1,13 @@
+{
+  "name": "Memories",
+  "short_name": "Memories",
+  "description": "Daily journaling with no fluff.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1E5CE",
+  "theme_color": "#F1E5CE",
+  "icons": [
+    { "src": "./assets/favicon.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "./assets/logo.png", "sizes": "1024x1024", "type": "image/png" }
+  ]
+}
