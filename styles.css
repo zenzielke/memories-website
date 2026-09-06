@@ -113,7 +113,8 @@ button:focus-visible {
 .brand-mark {
   width: 34px;
   height: 34px;
-  border-radius: 10px;
+  border-radius: 0;
+  object-fit: contain;
   object-fit: cover;
 }
 .brand-word {
@@ -693,7 +694,7 @@ button:focus-visible {
   letter-spacing: -0.02em;
   text-decoration: none;
 }
-.footer-brand img { width: 28px; height: 28px; border-radius: 8px; }
+.footer-brand img { width: 28px; height: 28px; border-radius: 0; object-fit: contain; }
 .footer-label {
   font-size: 12px;
   font-weight: 750;

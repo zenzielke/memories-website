@@ -8,6 +8,6 @@
   "theme_color": "#F1E5CE",
   "icons": [
     { "src": "./assets/favicon.png", "sizes": "64x64", "type": "image/png" },
-    { "src": "./assets/logo.png", "sizes": "1024x1024", "type": "image/png" }
+    { "src": "./assets/logo-opaque.png", "sizes": "1024x1024", "type": "image/png" }
   ]
 }
