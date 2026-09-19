@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Terms of Use · Memories</title>
     <meta name="description" content="Terms of Use for the Memories iPhone journal." />
-    <link rel="canonical" href="https://memoriesjournal.com/terms" />
+    <link rel="canonical" href="https://www.memoriesjournal.com/terms" />
     <meta name="theme-color" content="#F1E5CE" />
     <link rel="icon" type="image/png" href="./assets/favicon-v2.png?v=2" />
     <link rel="apple-touch-icon" href="./assets/logo-opaque.png?v=2" />
@@ -20,14 +20,36 @@
           <span class="brand-word">Memories</span>
         </a>
         <div class="topbar-actions">
-          <nav class="topnav" aria-label="Primary">
-            <a href="./index.html#daily">Daily</a>
-            <a href="./index.html#plus">Memories+</a>
+                    <nav class="topnav" aria-label="Primary">
+            <a href="./index.html#features">Features</a>
+            <a href="./index.html#memories-plus">Memories+</a>
             <a href="./index.html#privacy">Privacy</a>
+            <a href="./support.html">Support</a>
           </nav>
           <div data-store-cta></div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Open menu"
+            data-nav-toggle
+          >
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
         </div>
       </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="./index.html#features">Features</a>
+        <a href="./index.html#memories-plus">Memories+</a>
+        <a href="./index.html#privacy">Privacy</a>
+        <a href="./support.html">Support</a>
+      </nav>
     </header>
     <main id="main" class="legal-main">
       <div class="legal-wrap">
@@ -333,7 +355,7 @@
         </div>
       </div>
     </main>
-    <footer class="site-footer">
+            <footer class="site-footer">
       <div class="section-inner">
         <div class="footer-grid">
           <div>
@@ -341,7 +363,7 @@
               <img src="./assets/logo.png" alt="" width="28" height="28" />
               Memories
             </a>
-            <p class="footer-copy">Operated by Meadow Labs LLC.</p>
+            <p class="footer-blurb">Operated by Meadow Labs LLC.</p>
           </div>
           <div>
             <div class="footer-label">Legal</div>
@@ -352,14 +374,18 @@
           </div>
           <div>
             <div class="footer-label">Company</div>
-            <div class="footer-links"><a href="./support.html">Support</a></div>
+            <div class="footer-links">
+              <a href="./support.html">Support</a>
+            </div>
           </div>
           <div>
             <div class="footer-label">Download</div>
-            <div class="footer-links"><div data-store-cta></div></div>
+            <div class="footer-links">
+              <div data-store-cta></div>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">© <span data-year></span> Meadow Labs LLC. Memories.</div>
+        <div class="footer-bottom">© <span data-year>2026</span> Meadow Labs LLC. Memories.</div>
       </div>
     </footer>
     <script src="./main.js" defer></script>

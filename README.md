@@ -1,8 +1,9 @@
 # Memories website
 
-Static marketing site for **Memories** (`memoriesjournal.com`).
+Static marketing site for **Memories** (`www.memoriesjournal.com`).
 
-Built from `WEBSITE_BUILD_SPEC.pdf`: HTML + CSS + minimal vanilla JS. No React, no npm, no analytics, no remote fonts, no Tailwind CDN (per the build spec).
+Stack: HTML + CSS + minimal vanilla JS. No React, no npm, no analytics, no remote fonts.
+Deployed via **Vercel** (`vercel.json`), not GitHub Pages.
 
 ## Local preview
 
@@ -21,34 +22,24 @@ Edit `SITE_STATE` at the top of `main.js`:
 |---|---|
 | `isAppStoreLive` | Flip to `true` when the App Store listing exists |
 | `appStoreURL` | Real App Store URL |
-| `isCloudSyncVerified` | Flip to `true` only after real-device CloudKit QA |
-| `supportEmail` | Real support inbox |
+| `isCloudSyncVerified` | Controls optional iCloud marketing claims if needed |
+| `supportEmail` | Support inbox (`zen@meadowresearch.com`) |
 
-## Screenshots to drop in `assets/`
+When `isAppStoreLive` is true, every `[data-store-cta]` slot renders the App Store badge linking to `appStoreURL`.
 
-- `hero-today.png`
-- `calendar.png`
-- `patterns.png`
-- `year-mosaic.png`
-- `explore.png`
-- `memory-detail.png`
-- `media.png` (optional / Plus)
-- `on-this-day.png` (optional)
-- `og-image.png` (1200×630, later)
+## Screenshots
 
-Missing screenshots show labeled placeholders instead of broken images.
+Originals live in `assets/app/`. Responsive WebP derivatives are in `assets/app/optimized/`.
 
-## Deploy (Vercel)
+## Open Graph image
 
-1. New Vercel project rooted at this folder
-2. Framework Preset: Other / static
-3. No build command
-4. Attach `memoriesjournal.com` and redirect `www` → apex
+Expected (not yet committed as a rendered asset):
 
-## Still needed before production
+- Path: `assets/social/memories-og.jpg`
+- Size: 1200 × 630
 
-- Real app screenshots
-- Final Privacy Policy + Terms copy
-- Support email
-- App Store URL
-- CloudKit marketing copy only after device QA
+Metadata already points at that URL. Add the file before launch sharing.
+
+## Legal
+
+Privacy / Terms / Support HTML pages are preserved. PDFs remain in `assets/legal/` for reference.

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy · Memories</title>
     <meta name="description" content="Privacy Policy for the Memories iPhone journal." />
-    <link rel="canonical" href="https://memoriesjournal.com/privacy" />
+    <link rel="canonical" href="https://www.memoriesjournal.com/privacy" />
     <meta name="theme-color" content="#F1E5CE" />
     <link rel="icon" type="image/png" href="./assets/favicon-v2.png?v=2" />
     <link rel="apple-touch-icon" href="./assets/logo-opaque.png?v=2" />
@@ -20,19 +20,41 @@
           <span class="brand-word">Memories</span>
         </a>
         <div class="topbar-actions">
-          <nav class="topnav" aria-label="Primary">
-            <a href="./index.html#daily">Daily</a>
-            <a href="./index.html#plus">Memories+</a>
+                    <nav class="topnav" aria-label="Primary">
+            <a href="./index.html#features">Features</a>
+            <a href="./index.html#memories-plus">Memories+</a>
             <a href="./index.html#privacy">Privacy</a>
+            <a href="./support.html">Support</a>
           </nav>
           <div data-store-cta></div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Open menu"
+            data-nav-toggle
+          >
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
         </div>
       </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="./index.html#features">Features</a>
+        <a href="./index.html#memories-plus">Memories+</a>
+        <a href="./index.html#privacy">Privacy</a>
+        <a href="./support.html">Support</a>
+      </nav>
     </header>
     <main id="main" class="legal-main">
       <div class="legal-wrap">
         <h1>Privacy Policy</h1>
-        <p class="intro">Last updated: August 24, 2026</p>
+        <p class="intro">Last updated: September 8, 2026</p>
         <div class="legal-card legal-card--document">
           <h2>1. Overview</h2>
           <p>Memories is a mobile application operated by Meadow Labs LLC (“Meadow Labs,” “we,” “us,” or “our”).</p>
@@ -77,6 +99,10 @@
           <p>Voice recordings are stored as part of your Journal Content on your device and, when iCloud synchronization is enabled and available, may synchronize through iCloud.</p>
           <p>Meadow Labs does not operate a remote voice-recording or transcription service and does not send your recordings to third-party AI or speech-processing providers.</p>
           <p>You may delete voice recordings from your memories.</p>
+          <h2>5A. Speech Recognition (Dictation)</h2>
+          <p>Memories can optionally convert speech into text in the composer using Apple’s on-device Speech framework when available.</p>
+          <p>The app requests speech-recognition and microphone permission only when you use dictation.</p>
+          <p>Dictated text becomes part of your Journal Content on your device. Meadow Labs does not send your speech or dictated text to third-party AI or speech-processing providers.</p>
           <h2>6. Location and Place Information</h2>
           <p>Memories allows you to optionally attach a place to a memory.</p>
           <p>Location is not required to use Memories.</p>
@@ -286,7 +312,7 @@
         </div>
       </div>
     </main>
-    <footer class="site-footer">
+            <footer class="site-footer">
       <div class="section-inner">
         <div class="footer-grid">
           <div>
@@ -294,7 +320,7 @@
               <img src="./assets/logo.png" alt="" width="28" height="28" />
               Memories
             </a>
-            <p class="footer-copy">Operated by Meadow Labs LLC.</p>
+            <p class="footer-blurb">Operated by Meadow Labs LLC.</p>
           </div>
           <div>
             <div class="footer-label">Legal</div>
@@ -305,14 +331,18 @@
           </div>
           <div>
             <div class="footer-label">Company</div>
-            <div class="footer-links"><a href="./support.html">Support</a></div>
+            <div class="footer-links">
+              <a href="./support.html">Support</a>
+            </div>
           </div>
           <div>
             <div class="footer-label">Download</div>
-            <div class="footer-links"><div data-store-cta></div></div>
+            <div class="footer-links">
+              <div data-store-cta></div>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">© <span data-year></span> Meadow Labs LLC. Memories.</div>
+        <div class="footer-bottom">© <span data-year>2026</span> Meadow Labs LLC. Memories.</div>
       </div>
     </footer>
     <script src="./main.js" defer></script>

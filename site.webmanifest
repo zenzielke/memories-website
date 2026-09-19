@@ -1,7 +1,7 @@
 {
   "name": "Memories",
   "short_name": "Memories",
-  "description": "Daily journaling with no fluff.",
+  "description": "A private one-minute journal for iPhone.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#F1E5CE",

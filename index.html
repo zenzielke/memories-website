@@ -3,18 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Memories - Daily journaling with no fluff</title>
-    <meta name="description" content="A private iPhone journal. Write about your day, mark how it felt, and look back when you want to." />
-    <link rel="canonical" href="https://memoriesjournal.com/" />
+    <title>Memories — One Minute Journal for iPhone</title>
+    <meta
+      name="description"
+      content="A private one-minute journal for iPhone. Save a thought, mood, photo, voice memory or place. No streaks, no ads, no public feed."
+    />
+    <link rel="canonical" href="https://www.memoriesjournal.com/" />
     <meta name="theme-color" content="#F1E5CE" />
     <link rel="icon" type="image/png" href="./assets/favicon-v2.png?v=2" />
     <link rel="apple-touch-icon" href="./assets/logo-opaque.png?v=2" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://memoriesjournal.com/" />
-    <meta property="og:title" content="Memories - Daily journaling with no fluff" />
-    <meta property="og:description" content="A private iPhone journal. Write about your day when you want to." />
-    <meta property="og:image" content="https://memoriesjournal.com/assets/logo-opaque.png" />
+    <meta property="og:url" content="https://www.memoriesjournal.com/" />
+    <meta property="og:title" content="Memories — Keep today. Remember your life." />
+    <meta
+      property="og:description"
+      content="A private one-minute journal for iPhone. One sentence is enough."
+    />
+    <meta property="og:image" content="https://www.memoriesjournal.com/assets/social/memories-og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Memories — Keep today. Remember your life." />
+    <meta
+      name="twitter:description"
+      content="A private one-minute journal for iPhone. One sentence is enough."
+    />
+    <meta name="twitter:image" content="https://www.memoriesjournal.com/assets/social/memories-og.jpg" />
     <link rel="manifest" href="./site.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -23,150 +37,278 @@
     <header class="topbar">
       <div class="topbar-inner">
         <a class="brand" href="./index.html" aria-label="Memories home">
-          <img class="brand-mark" src="./assets/logo.png" alt="" width="34" height="34" />
+          <img class="brand-mark" src="./assets/logo.png" alt="" width="32" height="32" />
           <span class="brand-word">Memories</span>
         </a>
         <div class="topbar-actions">
           <nav class="topnav" aria-label="Primary">
-            <a href="#daily">Daily</a>
-            <a href="#plus">Memories+</a>
+            <a href="#features">Features</a>
+            <a href="#memories-plus">Memories+</a>
             <a href="#privacy">Privacy</a>
+            <a href="./support.html">Support</a>
           </nav>
           <div data-store-cta></div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobileNav"
+            aria-label="Open menu"
+            data-nav-toggle
+          >
+            <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
         </div>
       </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+        <a href="#features">Features</a>
+        <a href="#memories-plus">Memories+</a>
+        <a href="#privacy">Privacy</a>
+        <a href="./support.html">Support</a>
+      </nav>
     </header>
 
     <main id="main">
-      <section class="hero hero--simple" aria-labelledby="hero-title">
-        <div class="hero-grid hero-grid--simple">
-          <div>
-            <p class="hero-eyebrow">Memories for iPhone</p>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Memories for iPhone</p>
             <h1 id="hero-title" class="hero-title">Keep today.</h1>
-            <p class="hero-support">Remember your life.</p>
-            <p class="hero-body">
-              A private journal for iPhone. Write about your day when you want to.
-            </p>
+            <p class="hero-sub">Remember your life.</p>
+            <p class="hero-body">Your private journal.</p>
             <div class="hero-cta">
               <div data-store-cta></div>
-              <p class="hero-note">No account. No ads. Built for iPhone.</p>
+            </div>
+            <p class="hero-note">No account. No Ads. Private.</p>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="phone phone--hero">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./assets/app/optimized/memories-today-480.webp 480w, ./assets/app/optimized/memories-today-720.webp 720w, ./assets/app/optimized/memories-today-960.webp 960w"
+                  sizes="(max-width: 899px) 74vw, min(40vw, 368px)"
+                />
+                <img
+                  src="./assets/app/memories-today.png"
+                  alt="Memories journal entry with a photo, mood, and context tags."
+                  width="1419"
+                  height="2796"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section loop-section" id="daily" aria-labelledby="loop-title">
+      <section class="section section--after-hero" id="features" aria-labelledby="features-title">
         <div class="section-inner">
-          <p class="section-kicker">Daily loop</p>
-          <h2 id="loop-title" class="h2">A minute is enough.</h2>
-          <p class="lead">Memories keeps daily journaling quick.</p>
-          <div class="loop-grid">
-            <article class="loop-card">
-              <div class="mini-write" aria-hidden="true">
-                <div class="date">Tue, Aug 19</div>
-                <div class="line">And for the first time in a long time, I felt like myself again.</div>
-              </div>
-              <h3>Write one thing.</h3>
-              <p>One line is enough. Longer is there when you want it.</p>
-            </article>
-
-            <article class="loop-card">
-              <div class="mood-row" aria-hidden="true">
-                <span class="mood-swatch" data-mood="rough"></span>
-                <span class="mood-swatch" data-mood="low"></span>
-                <span class="mood-swatch" data-mood="ok"></span>
-                <span class="mood-swatch" data-mood="good"></span>
-                <span class="mood-swatch" data-mood="great"></span>
-              </div>
-              <h3>Mark the day.</h3>
-              <p>Just enough color coding to remember how the day was.</p>
-            </article>
-
-            <article class="loop-card">
-              <div class="context-demo" aria-hidden="true">
-                <div class="tag-row">
-                  <span class="tag-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-                    Friends
-                  </span>
-                  <span class="tag-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
-                    Home
-                  </span>
-                  <span class="tag-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    Photo
-                  </span>
-                  <span class="tag-pill">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-                    Place
-                  </span>
+          <div class="split split--visual-left">
+            <div class="split-copy reveal">
+              <p class="eyebrow">Daily loop</p>
+              <h2 id="features-title" class="h2">A minute is enough.</h2>
+              <p class="lead">Memories keeps daily journaling quick.</p>
+              <div class="loop-list">
+                <div class="loop-item">
+                  <h3>Write one thing.</h3>
+                  <p>Just a sentence is enough, but feel free to add as much as you want.</p>
                 </div>
-                <div class="context-photo" aria-hidden="true"></div>
+                <div class="loop-item">
+                  <h3>Associate the day.</h3>
+                  <p>Was it great? Only ok? Be as specific as you want.</p>
+                </div>
+                <div class="loop-item">
+                  <h3>Add what mattered.</h3>
+                  <p>People, places, a photo, a voice note, or nothing else at all.</p>
+                </div>
               </div>
-              <h3>Add what mattered.</h3>
-              <p>People, places, a photo, a voice note, or nothing else at all.</p>
-            </article>
+            </div>
+            <div class="split-visual reveal">
+              <div class="phone">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/app/optimized/memories-compose-480.webp 480w, ./assets/app/optimized/memories-compose-720.webp 720w, ./assets/app/optimized/memories-compose-960.webp 960w"
+                    sizes="(max-width: 899px) 72vw, 340px"
+                  />
+                  <img
+                    src="./assets/app/memories-compose.png"
+                    alt="Memories daily entry editor with mood and feeling selections."
+                    width="1419"
+                    height="2796"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="section year-section" aria-labelledby="year-title">
         <div class="section-inner">
-          <p class="section-kicker">Year Mosaic</p>
-          <h2 id="year-title" class="h2 h2-serif">See the year you actually had.</h2>
-          <p class="lead">No streaks. No score.</p>
-          <div class="mosaic-panel">
+          <div class="year-intro reveal">
+            <p class="eyebrow">Year Mosaic</p>
+            <h2 id="year-title" class="h2 h2-serif">Visualize your year.</h2>
+            <p class="lead">No streaks. No score.</p>
+          </div>
+          <div class="mosaic-panel reveal">
             <div class="mosaic-meta">
               <span>182 days remembered</span>
-              <span>48 Great · 61 Good · 39 Ok · 22 Low · 12 Rough</span>
+              <span>48 Great · 61 Good · 39 Ok · 22 Off · 12 Rough</span>
             </div>
-            <div id="yearMosaic" class="mosaic-grid" role="img" aria-label="Decorative sample year mosaic using demo mood colors"></div>
+            <div id="yearMosaic" class="mosaic-grid" role="list" aria-label="Interactive sample year mosaic"></div>
+            <div id="mosaicTip" class="mosaic-tip" hidden></div>
             <p class="mosaic-note">Sample archive for the website — not real user data.</p>
           </div>
         </div>
       </section>
 
-      <section class="section privacy-section" id="privacy" aria-labelledby="privacy-title">
+      <section class="section plus-section" id="memories-plus" aria-labelledby="plus-title">
         <div class="section-inner">
-          <p class="section-kicker">Privacy</p>
-          <h2 id="privacy-title" class="h2">Your journal isn't a chatbot.</h2>
-          <p class="lead">Memories is built to keep the writing yours. No account. No ads. No remote AI reading your journal.</p>
-          <p class="lead" data-cloud-copy hidden>
-            The app works offline, and private iCloud sync can keep your archive with your Apple account when enabled.
-          </p>
-          <div class="trust-grid">
-            <article class="trust-card"><h3>No account</h3><p>Open the app and write. There is no Memories profile to create.</p></article>
-            <article class="trust-card"><h3>No ads</h3><p>Your journal is not inventory for an advertising system.</p></article>
-            <article class="trust-card"><h3>No AI reading entries</h3><p>Patterns are calculated from your own recorded data. Memories does not send your journal to a remote AI service.</p></article>
+          <div class="split">
+            <div class="split-copy reveal">
+              <p class="plus-label">Memories+</p>
+              <h2 id="plus-title" class="h2">For when you want more.</h2>
+              <p class="lead">
+                Memories will always be free, but Memories+ is there for when you want to dig a little deeper.
+              </p>
+              <div class="plus-list">
+                <div class="plus-item">
+                  <h3>Follow the thread.</h3>
+                  <p>Collections, Memory Threads, Then / Now, and deeper Patterns.</p>
+                </div>
+                <div class="plus-item">
+                  <h3>See where you were.</h3>
+                  <p>Memory Map and your Media timeline.</p>
+                </div>
+                <div class="plus-item">
+                  <h3>Keep more of it.</h3>
+                  <p>Up to 6 photos, Year Recap, and Memory Book PDF.</p>
+                </div>
+                <div class="plus-item">
+                  <h3>Make it yours.</h3>
+                  <p>Premium themes and your own “One more thing” prompts.</p>
+                </div>
+              </div>
+              <p class="plus-pricing">$3.99/month · $24.99/year · $69.99 lifetime</p>
+            </div>
+            <div class="split-visual reveal">
+              <div class="phone">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/app/optimized/memories-map-480.webp 480w, ./assets/app/optimized/memories-map-720.webp 720w, ./assets/app/optimized/memories-map-960.webp 960w"
+                    sizes="(max-width: 899px) 72vw, 340px"
+                  />
+                  <img
+                    src="./assets/app/memories-map.png"
+                    alt="Memory Map showing saved journal locations."
+                    width="1419"
+                    height="2796"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="plus-section" id="plus" aria-labelledby="plus-title">
-        <div class="plus-stack plus-stack--top" aria-hidden="true"></div>
-        <div class="plus-stack plus-stack--bottom" aria-hidden="true"></div>
-        <div class="section-inner" style="position:relative;z-index:1">
-          <p class="section-kicker">Memories+</p>
-          <h2 id="plus-title" class="h2">See more in your memories.</h2>
-          <p class="lead">Memories+ unlocks richer ways to explore, understand, and look back through what you've saved.</p>
-          <div class="plus-grid plus-grid--five">
-            <article class="plus-card"><h3>Explore</h3><p>Follow the people, places, tags, and stretches of life that keep showing up.</p></article>
-            <article class="plus-card"><h3>Understand</h3><p>Notice specific changes in your own archive.</p></article>
-            <article class="plus-card"><h3>Capture more</h3><p>Add voice notes, photos, places, and more than one picture to the days that need it.</p></article>
-            <article class="plus-card"><h3>Personalize</h3><p>Add questions you actually want to be asked again.</p></article>
-            <article class="plus-card"><h3>Look back</h3><p>Give the archive more ways to bring an old day back.</p></article>
+      <section class="section band-dusk" id="privacy" aria-labelledby="privacy-title">
+        <div class="section-inner">
+          <div class="split split--visual-left">
+            <div class="split-copy reveal">
+              <p class="eyebrow">Privacy</p>
+              <h2 id="privacy-title" class="h2">Your journal isn’t a chatbot.</h2>
+              <p class="lead">There’s enough software trying to learn everything about you.</p>
+              <p class="lead">Your journal doesn’t need to join in.</p>
+              <p class="lead">
+                No ads. No public feed. No remote AI reading your entries. Private iCloud sync if you want it. App Lock if you really mean it.
+              </p>
+              <div class="privacy-cards">
+                <article class="privacy-card">
+                  <h3>Private iCloud Sync</h3>
+                  <p>Your memories can follow you through your private Apple iCloud account.</p>
+                </article>
+                <article class="privacy-card">
+                  <h3>App Lock</h3>
+                  <p>Face ID or your device passcode. Because some things are nobody else’s business.</p>
+                </article>
+                <article class="privacy-card">
+                  <h3>No Account With Us</h3>
+                  <p>No profile to make. No feed to maintain. Open it and write.</p>
+                </article>
+              </div>
+            </div>
+            <div class="split-visual reveal">
+              <div class="phone">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/app/optimized/memories-lock-480.webp 480w, ./assets/app/optimized/memories-lock-720.webp 720w, ./assets/app/optimized/memories-lock-960.webp 960w"
+                    sizes="(max-width: 899px) 72vw, 340px"
+                  />
+                  <img
+                    src="./assets/app/memories-lock.png"
+                    alt="Memories App Lock privacy screen."
+                    width="1419"
+                    height="2796"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section final-cta" aria-labelledby="final-title">
-        <div class="section-inner center">
-          <h2 id="final-title" class="h2 h2-serif">Keep today.</h2>
-          <p class="lead">Write one line. See where it goes.</p>
-          <div class="hero-cta" style="margin-top:28px">
-            <div data-store-cta></div>
-            <p class="hero-note">Made for iPhone.</p>
+      <section class="section" aria-labelledby="themes-title">
+        <div class="section-inner">
+          <div class="split">
+            <div class="split-copy reveal">
+              <h2 id="themes-title" class="h2">Make it yours.</h2>
+              <p class="lead">After all, it is your journal.</p>
+              <div class="swatch-row" aria-label="Theme colors">
+                <span class="swatch" data-theme="paper" title="Paper"></span>
+                <span class="swatch" data-theme="sage" title="Sage"></span>
+                <span class="swatch" data-theme="mist" title="Mist"></span>
+                <span class="swatch" data-theme="clay" title="Clay"></span>
+                <span class="swatch" data-theme="lilac" title="Lilac"></span>
+                <span class="swatch" data-theme="dusk" title="Dusk"></span>
+                <span class="swatch" data-theme="night" title="Night"></span>
+              </div>
+            </div>
+            <div class="split-visual reveal">
+              <div class="phone">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/app/optimized/memories-themes-480.webp 480w, ./assets/app/optimized/memories-themes-720.webp 720w, ./assets/app/optimized/memories-themes-960.webp 960w"
+                    sizes="(max-width: 899px) 72vw, 340px"
+                  />
+                  <img
+                    src="./assets/app/memories-themes.png"
+                    alt="Memories theme picker showing Paper, Sage, Mist, Clay, Lilac, Dusk, and Night."
+                    width="1419"
+                    height="2796"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -180,7 +322,7 @@
               <img src="./assets/logo.png" alt="" width="28" height="28" />
               Memories
             </a>
-            <p class="footer-copy">Operated by Meadow Labs LLC.</p>
+            <p class="footer-blurb">Operated by Meadow Labs LLC.</p>
           </div>
           <div>
             <div class="footer-label">Legal</div>
@@ -191,14 +333,18 @@
           </div>
           <div>
             <div class="footer-label">Company</div>
-            <div class="footer-links"><a href="./support.html">Support</a></div>
+            <div class="footer-links">
+              <a href="./support.html">Support</a>
+            </div>
           </div>
           <div>
             <div class="footer-label">Download</div>
-            <div class="footer-links"><div data-store-cta></div></div>
+            <div class="footer-links">
+              <div data-store-cta></div>
+            </div>
           </div>
         </div>
-        <div class="footer-bottom">© <span data-year></span> Meadow Labs LLC. Memories.</div>
+        <div class="footer-bottom">© <span data-year>2026</span> Meadow Labs LLC. Memories.</div>
       </div>
     </footer>
     <script src="./main.js" defer></script>
