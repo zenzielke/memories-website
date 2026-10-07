@@ -2,7 +2,7 @@
 
 const SITE_STATE = {
   isAppStoreLive: true,
-  appStoreURL: "https://apps.apple.com/app/memories-one-minute-journal/id6805282064",
+  appStoreURL: "https://apps.apple.com/us/app/memories-one-minute-journal/id6805282064",
   isCloudSyncVerified: true,
   supportEmail: "zen@meadowresearch.com",
 };

@@ -2,6 +2,18 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/app",
+      "destination": "https://apps.apple.com/us/app/memories-one-minute-journal/id6805282064",
+      "permanent": false
+    },
+    {
+      "source": "/app/",
+      "destination": "https://apps.apple.com/us/app/memories-one-minute-journal/id6805282064",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
